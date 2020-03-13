@@ -1,0 +1,48 @@
+; Run "webscrapbook help config" for details
+
+[app]
+name = WebScrapBook
+theme = default
+; root = .
+; base =
+
+[book ""]
+name = scrapbook
+top_dir = 
+data_dir = data
+tree_dir = tree
+index = tree/map.html
+no_tree = false
+
+; [auth "user1"]
+; user = myuser1
+; pw = 73337dfdaf99b87be97cb4b4f16645e059da6e5f
+; pw_salt = mysalt1
+; pw_type = sha1
+; permission = all
+
+[auth "guest"]
+user = guest
+pw = guest
+;pw_salt = mysalt2
+pw_type = plain
+permission = read
+
+[server]
+port = 9000
+host = 0.0.0.0
+; threads = 0
+
+ssl_on   = false
+; ssl_key  = ./wsb/webscrapbook.key
+; ssl_cert = ./wsb/webscrapbook.crt
+; ssl_pw   =
+
+browse = false
+
+[browser]
+; command =
+; index =
+; cache_prefix = webscrapbook.
+; cache_expire = 259200
+; use_jar = false

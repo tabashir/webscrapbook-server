@@ -1,0 +1,19 @@
+version: '3'                                                                                                                                         
+                                                                                                                                                       
+services:
+  webscrapbook:
+    image: tabashir/webscrapbook
+    container_name: webscrapbook
+    build: .
+    volumes:
+      - ./data:/data:Z
+    ports:
+      - "9000:9000"
+    networks:
+      - webscrap
+
+networks:
+  webscrap:
+
+
+
